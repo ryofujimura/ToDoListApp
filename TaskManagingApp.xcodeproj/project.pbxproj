@@ -11,6 +11,10 @@
 		AF81944A271F54D50078B3A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF819449271F54D50078B3A1 /* ContentView.swift */; };
 		AF81944C271F54D60078B3A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF81944B271F54D60078B3A1 /* Assets.xcassets */; };
 		AF81944F271F54D60078B3A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF81944E271F54D60078B3A1 /* Preview Assets.xcassets */; };
+		AFDCDE50271F5722001A71F8 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDCDE4F271F5722001A71F8 /* Calendar.swift */; };
+		AFDCDE52271F5989001A71F8 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDCDE51271F5989001A71F8 /* Data.swift */; };
+		AFDCDE54271F5FF4001A71F8 /* addItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDCDE53271F5FF4001A71F8 /* addItem.swift */; };
+		AFDCDE56271F6C2B001A71F8 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDCDE55271F6C2B001A71F8 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		AF819449271F54D50078B3A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AF81944B271F54D60078B3A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF81944E271F54D60078B3A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AFDCDE4F271F5722001A71F8 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		AFDCDE51271F5989001A71F8 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		AFDCDE53271F5FF4001A71F8 /* addItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addItem.swift; sourceTree = "<group>"; };
+		AFDCDE55271F6C2B001A71F8 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +43,8 @@
 		AF81943B271F54D50078B3A1 = {
 			isa = PBXGroup;
 			children = (
+				AFDCDE4C271F5552001A71F8 /* Utils */,
+				AFDCDE4B271F553D001A71F8 /* Screens */,
 				AF819446271F54D50078B3A1 /* TaskManagingApp */,
 				AF819445271F54D50078B3A1 /* Products */,
 			);
@@ -65,6 +75,24 @@
 				AF81944E271F54D60078B3A1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AFDCDE4B271F553D001A71F8 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				AFDCDE4F271F5722001A71F8 /* Calendar.swift */,
+				AFDCDE53271F5FF4001A71F8 /* addItem.swift */,
+				AFDCDE55271F6C2B001A71F8 /* CardView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		AFDCDE4C271F5552001A71F8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AFDCDE51271F5989001A71F8 /* Data.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +166,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF81944A271F54D50078B3A1 /* ContentView.swift in Sources */,
+				AFDCDE54271F5FF4001A71F8 /* addItem.swift in Sources */,
+				AFDCDE50271F5722001A71F8 /* Calendar.swift in Sources */,
 				AF819448271F54D50078B3A1 /* TaskManagingAppApp.swift in Sources */,
+				AFDCDE56271F6C2B001A71F8 /* CardView.swift in Sources */,
+				AFDCDE52271F5989001A71F8 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +298,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TaskManagingApp/Preview Content\"";
@@ -275,6 +308,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -296,6 +332,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TaskManagingApp/Preview Content\"";
@@ -305,6 +342,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
