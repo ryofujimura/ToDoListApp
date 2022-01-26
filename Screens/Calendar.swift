@@ -23,15 +23,15 @@ struct Calendar_Previews: PreviewProvider {
                 addItem()
             }.navigationTitle("Tasks")
             .navigationBarItems(trailing: EditButton())
-            HStack{
-                CardView()
-                .offset(y: 215)
-                .padding(.all, 40.0)
-                CardView()
-                .offset(y: 215)
-                .padding(.all, 40.0)
-                
-            }.ignoresSafeArea()
+//            HStack{
+//                CardView()
+//                .offset(y: 215)
+//                .padding(.all, 40.0)
+//                CardView()
+//                .offset(y: 215)
+//                .padding(.all, 40.0)
+//
+//            }.ignoresSafeArea()
         }
        
     }
