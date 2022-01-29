@@ -21,10 +21,8 @@ struct Calendar_Previews: PreviewProvider {
         ZStack{
             NavigationView{
                 addItem()
-                    .navigationTitle("Tasks")
-                    .navigationBarItems(trailing: EditButton())
-            }
-            
+            }.navigationTitle("Tasks")
+            .navigationBarItems(trailing: EditButton())
 //            HStack{
 //                CardView()
 //                .offset(y: 215)
