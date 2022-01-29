@@ -14,10 +14,15 @@ struct addItem: View {
     var searchBar : some View {
         HStack{
             TextField("Enter task", text: self.$newToDo)
+                .padding(.leading)
+                .resignFirstResponder()
             Button(action: self.addNewToDo, label: {Text("Add")
-                    .fontWeight(.heavy)
-                .foregroundColor(Color(hue: 0.548, saturation: 0.908, brightness: 0.497))})
+                    .fontWeight(.black)
+                    .foregroundColor(Color(hue: 0.548, saturation: 0.908, brightness: 0.497))
+                    .padding(.horizontal)
+                })
         }
+        .padding(12.0)
     }
     
     func addNewToDo(){
@@ -27,7 +32,7 @@ struct addItem: View {
     
     var body: some View {
         VStack{
-            searchBar.padding()
+            searchBar
             List{
                 ForEach(self.taskStore.tasks){
                     task in
@@ -44,6 +49,7 @@ struct addItem: View {
     func delete(at offsets: IndexSet) {
         taskStore.tasks.remove(atOffsets: offsets)
     }
+    
 }
 
 struct addItem_Previews: PreviewProvider {
